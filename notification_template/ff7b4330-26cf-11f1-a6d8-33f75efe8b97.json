@@ -1,0 +1,45 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "description",
+              "color" : "#757575"
+            },
+            "actionButtonConfig" : {
+              "enabled" : true,
+              "text" : "Go to reports",
+              "linkType" : "LINK",
+              "link" : "/reporting/reports"
+            }
+          },
+          "body" : "${reportFormat} report '${reportName}' is ready",
+          "enabled" : true,
+          "subject" : "Report generated"
+        },
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>Estimado, adjunto encontrar&aacute; el informe mensual de consumo energ&eacute;tico generado autom&aacute;ticamente por la plataforma Sunkuu 360.</p>",
+          "enabled" : true,
+          "subject" : "Informe mensual de consumo energético — ${reportName}"
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "ff7b4330-26cf-11f1-a6d8-33f75efe8b97"
+    },
+    "name" : "Report generated notification",
+    "notificationType" : "REPORT_GENERATED"
+  }
+}

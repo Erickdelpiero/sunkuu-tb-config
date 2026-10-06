@@ -1,0 +1,144 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "Switch inteligente monofásico Gen2 con medición de potencia activa, corriente, voltaje y factor de potencia.",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "fa155fd0-2714-11f1-a6d8-33f75efe8b97"
+    },
+    "image" : null,
+    "name" : "Shelly Plus 1",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "ALARM",
+      "arguments" : {
+        "temp_sonda" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "temperatura_sonda",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "temp_sonda",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 20.0
+                }
+              }, {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 35.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "AND"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "WARNING" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "temp_sonda",
+                "operation" : "OR",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 20.0
+                  }
+                }, {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 35.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "MINUTES",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 5
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "output" : null,
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : true,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : true
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1778028011954,
+      "failuresEnabled" : true
+    },
+    "name" : "Temperatura Agua",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "fedba7d0-26cf-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ALARM"
+  } ]
+}

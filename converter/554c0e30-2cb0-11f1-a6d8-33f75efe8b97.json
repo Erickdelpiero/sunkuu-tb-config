@@ -1,0 +1,36 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Convierte payloads MQTT del Shelly 1PM Mini Gen3 (switch:0) a telemetría ThingsBoard."
+    },
+    "configuration" : {
+      "scriptLang" : "JS",
+      "decoder" : "var data = typeof payload === 'string' ? JSON.parse(payload) : JSON.parse(String.fromCharCode.apply(null, payload));\nvar deviceName = metadata.topic.split('/')[0];\n\nif (deviceName.indexOf('shelly1pmminig3-') !== 0) {\n    return null;\n}\n\nvar result = {\n    deviceName: deviceName,\n    deviceType: 'Shelly 1PM Mini Gen3',\n    telemetry: {}\n};\n\nresult.telemetry = {\n    estado_salida:       data.output,\n    potencia_activa:     data.apower,\n    voltaje:             data.voltage,\n    corriente:           data.current,\n    factor_potencia:     data.pf,\n    frecuencia:          data.freq,\n    energia_acumulada:   data.aenergy ? data.aenergy.total : null,\n    energia_devuelta:    data.ret_aenergy ? data.ret_aenergy.total : null,\n    temperatura_interna: data.temperature ? data.temperature.tC : null\n};\n\nreturn result;",
+      "tbelDecoder" : "",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer" ]
+    },
+    "converterVersion" : 1,
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "554c0e30-2cb0-11f1-a6d8-33f75efe8b97"
+    },
+    "integrationType" : "MQTT",
+    "name" : "Shelly 1PM Mini Gen3 - Uplink",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

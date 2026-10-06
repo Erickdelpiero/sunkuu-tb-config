@@ -1,0 +1,36 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Convierte payloads MQTT del Shelly Pro EM50 (em1:0, em1:1, em1data:0, em1data:1) a telemetría ThingsBoard."
+    },
+    "configuration" : {
+      "scriptLang" : "JS",
+      "decoder" : "var data = typeof payload === 'string' ? JSON.parse(payload) : JSON.parse(String.fromCharCode.apply(null, payload));\nvar deviceName = metadata.topic.split('/')[0];\nvar result = {\n    deviceName: deviceName,\n    deviceType: 'Shelly Pro EM50',\n    telemetry: {}\n};\n\nvar topic = metadata.topic;\n\nif (topic.indexOf('/status/em1:0') !== -1) {\n    result.telemetry = {\n        voltaje_canal_0:          data.voltage,\n        corriente_canal_0:        data.current,\n        potencia_activa_canal_0:  data.act_power,\n        potencia_aparente_canal_0: data.aprt_power,\n        factor_potencia_canal_0:  data.pf,\n        frecuencia_canal_0:       data.freq\n    };\n} else if (topic.indexOf('/status/em1:1') !== -1) {\n    result.telemetry = {\n        voltaje_canal_1:          data.voltage,\n        corriente_canal_1:        data.current,\n        potencia_activa_canal_1:  data.act_power,\n        potencia_aparente_canal_1: data.aprt_power,\n        factor_potencia_canal_1:  data.pf,\n        frecuencia_canal_1:       data.freq\n    };\n} else if (topic.indexOf('/status/em1data:0') !== -1) {\n    result.telemetry = {\n        energia_canal_0:     data.total_act_energy,\n        energia_ret_canal_0: data.total_act_ret_energy\n    };\n} else if (topic.indexOf('/status/em1data:1') !== -1) {\n    result.telemetry = {\n        energia_canal_1:     data.total_act_energy,\n        energia_ret_canal_1: data.total_act_ret_energy\n    };\n}\n\nreturn result;",
+      "tbelDecoder" : "// Decode an uplink message from a buffer\n// payload - array of bytes\n// metadata - key/value object\n\n/** Decoder **/\n\n// decode payload to string\nvar payloadStr = decodeToString(payload);\n\n// decode payload to JSON\n// var data = decodeToJson(payload);\n\nvar deviceName = 'Device A';\nvar deviceType = 'thermostat';\nvar customerName = 'Customer C';\nvar groupName = 'thermostat devices';\nvar manufacturer = 'Example corporation';\n// use assetName and assetType instead of deviceName and deviceType\n// to automatically create assets instead of devices.\n// var assetName = 'Asset A';\n// var assetType = 'building';\n\n// Result object with device/asset attributes/telemetry data\nvar result = {\n// Use deviceName and deviceType or assetName and assetType, but not both.\n   deviceName: deviceName,\n   deviceType: deviceType,\n// assetName: assetName,\n// assetType: assetType,\n// customerName: customerName,\n   groupName: groupName,\n   attributes: {\n       model: 'Model A',\n       serialNumber: 'SN111',\n       integrationName: metadata['integrationName'],\n       manufacturer: manufacturer\n   },\n   telemetry: {\n       temperature: 42,\n       humidity: 80,\n       rawData: payloadStr\n   }\n};\n\n/** Helper functions 'decodeToString' and 'decodeToJson' are already built-in **/\n\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer" ]
+    },
+    "converterVersion" : 1,
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "b69ff030-2caf-11f1-a6d8-33f75efe8b97"
+    },
+    "integrationType" : "MQTT",
+    "name" : "Shelly Pro EM50 - Uplink",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

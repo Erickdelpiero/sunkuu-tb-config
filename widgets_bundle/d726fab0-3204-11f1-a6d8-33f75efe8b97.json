@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "centro_de_exportaci_n_sunkuu",
+    "description" : "",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "d726fab0-3204-11f1-a6d8-33f75efe8b97"
+    },
+    "image" : "",
+    "name" : "Sunkuu",
+    "order" : null,
+    "scada" : true,
+    "title" : "Sunkuu"
+  },
+  "fqns" : [ "centro_de_exportaci_n_sunkuu", "sunkuu_portal_de_flota", "sunkuu_template_3em", "sunkuu_template_piscina" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

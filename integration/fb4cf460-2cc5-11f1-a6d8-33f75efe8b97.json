@@ -1,0 +1,85 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Conexión al broker Mosquitto interno (gonex-network). Escucha telemetría de todos los dispositivos Shelly H&T G3 del tenant Sunkuu."
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "mosquitto",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "protocolVersion" : "MQTT_3_1_1",
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "+/status/temperature:0",
+        "qos" : 0
+      }, {
+        "filter" : "+/status/humidity:0",
+        "qos" : 0
+      }, {
+        "filter" : "+/status/devicepower:0",
+        "qos" : 0
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1774937326149,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "7ee30730-2cb0-11f1-a6d8-33f75efe8b97"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "fb4cf460-2cc5-11f1-a6d8-33f75efe8b97"
+    },
+    "name" : "Sunkuu - H&T G3 MQTT Integration",
+    "remote" : false,
+    "routingKey" : "4a7ffccc-5280-f106-45ae-5df47fcc709b",
+    "secret" : "gssic3oul3b5zfnsoucu",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "fb4cf460-2cc5-11f1-a6d8-33f75efe8b97"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b9dbf740-2ef2-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 85
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-pe-node",
+      "lastUpdateTs" : 1780580012444,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

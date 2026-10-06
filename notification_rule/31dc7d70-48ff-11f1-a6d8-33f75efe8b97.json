@@ -1,0 +1,34 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : "Send notification to tenant admins when an alarm is created"
+    },
+    "enabled" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "31dc7d70-48ff-11f1-a6d8-33f75efe8b97"
+    },
+    "name" : "Alarmas Sunkuu — Email",
+    "recipientsConfig" : {
+      "escalationTable" : {
+        "0" : [ "ff6d6080-26cf-11f1-a6d8-33f75efe8b97", "ff6e23d0-26cf-11f1-a6d8-33f75efe8b97" ]
+      },
+      "triggerType" : "ALARM"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "ff6ec010-26cf-11f1-a6d8-33f75efe8b97"
+    },
+    "triggerConfig" : {
+      "triggerType" : "ALARM",
+      "alarmSeverities" : null,
+      "alarmTypes" : null,
+      "clearRule" : null,
+      "notifyOn" : [ "CREATED" ],
+      "triggerType" : "ALARM"
+    },
+    "triggerType" : "ALARM"
+  }
+}

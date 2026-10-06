@@ -1,0 +1,75 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Conexión al broker Mosquitto interno (gonex-network). Escucha telemetría de todos los dispositivos Shelly Pro EM50 del tenant Sunkuu."
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "mosquitto",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "protocolVersion" : "MQTT_3_1_1",
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "+/status/em1:0",
+        "qos" : 0
+      }, {
+        "filter" : "+/status/em1:1",
+        "qos" : 1
+      }, {
+        "filter" : "+/status/em1data:0",
+        "qos" : 0
+      }, {
+        "filter" : "+/status/em1data:1",
+        "qos" : 1
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1774936856880,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "b69ff030-2caf-11f1-a6d8-33f75efe8b97"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "e3980900-2cc4-11f1-a6d8-33f75efe8b97"
+    },
+    "name" : "Sunkuu - Pro EM50 MQTT Integration",
+    "remote" : false,
+    "routingKey" : "9ee6d1fc-4cd9-c61f-d92a-b35b28727087",
+    "secret" : "ihomwgpf51qwmfx8q8h5",
+    "type" : "MQTT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-pe-node",
+      "lastUpdateTs" : 1780580012407,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

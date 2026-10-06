@@ -1,0 +1,471 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : false,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "fee60810-26cf-11f1-a6d8-33f75efe8b97"
+    },
+    "description" : "Medidor de energía trifásico Gen2. Variables: voltaje, corriente, potencia activa/aparente, factor de potencia y energía acumulada por fase (A, B, C) y totales.",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "89ae3280-2714-11f1-a6d8-33f75efe8b97"
+    },
+    "image" : null,
+    "name" : "Shelly Pro 3EM",
+    "profileData" : {
+      "alarms" : null,
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "ALARM",
+      "arguments" : {
+        "activo" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "active",
+            "scope" : "SERVER_SCOPE",
+            "type" : "ATTRIBUTE"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "activo",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : true
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "AND"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "activo",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : false
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "output" : null,
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : true,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : true
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1778027820279,
+      "failuresEnabled" : true
+    },
+    "name" : "Dispositivo Desconectado",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "fedba7d0-26cf-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ALARM"
+  }, {
+    "configuration" : {
+      "type" : "ALARM",
+      "arguments" : {
+        "fp_a" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "factor_potencia_fase_a",
+            "type" : "TS_LATEST"
+          }
+        },
+        "fp_b" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "factor_potencia_fase_b",
+            "type" : "TS_LATEST"
+          }
+        },
+        "fp_c" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "factor_potencia_fase_c",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "fp_a",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 0.85
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "fp_b",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 0.85
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "fp_c",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 0.85
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "AND"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "WARNING" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "fp_a",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 0.85
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "fp_b",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 0.85
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "fp_c",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 0.85
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "OR"
+            },
+            "schedule" : null,
+            "unit" : "MINUTES",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 5
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "output" : null,
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : true,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : true
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1778026966309,
+      "failuresEnabled" : true
+    },
+    "name" : "Factor de Potencia Bajo",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "fedba7d0-26cf-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ALARM"
+  }, {
+    "configuration" : {
+      "type" : "ALARM",
+      "arguments" : {
+        "voltaje_a" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "voltaje_fase_a",
+            "type" : "TS_LATEST"
+          }
+        },
+        "voltaje_b" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "voltaje_fase_b",
+            "type" : "TS_LATEST"
+          }
+        },
+        "voltaje_c" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "voltaje_fase_c",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "voltaje_a",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 200.0
+                }
+              }, {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 240.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "voltaje_b",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 200.0
+                }
+              }, {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 240.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "voltaje_c",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 200.0
+                }
+              }, {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 240.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "AND"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "WARNING" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "voltaje_a",
+                "operation" : "OR",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 200.0
+                  }
+                }, {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 240.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "voltaje_b",
+                "operation" : "OR",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 200.0
+                  }
+                }, {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 240.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "voltaje_c",
+                "operation" : "OR",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 200.0
+                  }
+                }, {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 240.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "OR"
+            },
+            "schedule" : null,
+            "unit" : "MINUTES",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 2
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "output" : null,
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : true,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : true
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1778026223648,
+      "failuresEnabled" : true
+    },
+    "name" : "Rango de Tensión",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "fedba7d0-26cf-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ALARM"
+  } ]
+}

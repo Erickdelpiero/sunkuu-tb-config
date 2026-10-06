@@ -1,0 +1,228 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "alignment" : "center",
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "config" : {
+          "baseUrl" : "http://thingsboard.gonex.pe:8080",
+          "dashboardId" : "0469dc30-5aab-11f1-a6d8-33f75efe8b97",
+          "namePattern" : null,
+          "state" : "",
+          "timewindow" : {
+            "selectedTab" : 1,
+            "history" : {
+              "historyType" : 0,
+              "interval" : 7200000,
+              "timewindowMs" : 2592000000
+            },
+            "aggregation" : {
+              "type" : "AVG"
+            }
+          },
+          "timezone" : "America/Lima",
+          "type" : "png",
+          "useCurrentUserCredentials" : false,
+          "useDashboardTimewindow" : false,
+          "userId" : null
+        },
+        "customWidth" : 100,
+        "dataSources" : [ {
+          "alarmFilterConfig" : null,
+          "dataKeys" : [ ],
+          "deviceId" : null,
+          "entityAliasId" : null,
+          "filterId" : null,
+          "latestDataKeys" : null,
+          "type" : "entity"
+        } ],
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "type" : "DASHBOARD",
+        "widthType" : "fitWidth"
+      } ],
+      "entityAliases" : [ ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "leftVerticalAlignment" : "middle",
+          "leftView" : {
+            "alignment" : "left",
+            "background" : null,
+            "borderColor" : null,
+            "borderRadius" : null,
+            "borderWidth" : null,
+            "customWidth" : 80,
+            "dataSources" : [ {
+              "alarmFilterConfig" : {
+                "assigneeId" : null,
+                "searchPropagatedAlarms" : false,
+                "severityList" : null,
+                "statusList" : [ "ACTIVE" ],
+                "typeList" : null
+              },
+              "dataKeys" : [ null ],
+              "deviceId" : null,
+              "entityAliasId" : null,
+              "filterId" : null,
+              "latestDataKeys" : null,
+              "type" : "device"
+            } ],
+            "imageUrl" : "tb-image;/api/images/tenant/FAVICON SUNKUU COLOR.png",
+            "margins" : null,
+            "paddings" : null,
+            "sourceType" : "image",
+            "subType" : null,
+            "type" : "IMAGE",
+            "widthType" : "custom"
+          },
+          "margins" : null,
+          "paddings" : {
+            "bottom" : 0,
+            "left" : 6,
+            "right" : 6,
+            "top" : 0
+          },
+          "rightVerticalAlignment" : "middle",
+          "rightView" : {
+            "background" : null,
+            "borderColor" : null,
+            "borderRadius" : null,
+            "borderWidth" : null,
+            "dataSources" : [ ],
+            "margins" : null,
+            "paddings" : null,
+            "subType" : null,
+            "type" : "RICH_TEXT",
+            "value" : "<table style=\"border-collapse: collapse; width: 100%; border-width: 0px; height: 48px;\" border=\"1\"><colgroup><col style=\"width: 100%;\"></colgroup>\n<tbody>\n<tr style=\"height: 24px;\">\n<td style=\"border-width: 0px; height: 24px; line-height: 1.5; text-align: right;\"><span style=\"font-size: 16px; font-weight: 500;\">Sunkuu Energy S.A.C.</span></td>\n</tr>\n<tr style=\"height: 24px;\">\n<td style=\"border-width: 0px; height: 24px; line-height: 1.5; text-align: right;\"><span style=\"font-size: 14px; color: rgb(117, 117, 117);\">RUC: 20609337002 -Chachapoyas, &nbsp;Perú</span></td>\n</tr>\n</tbody>\n</table>"
+          },
+          "splitGap" : 10,
+          "splitPosition" : 50.0,
+          "subType" : null,
+          "type" : "SPLIT_VIEW"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "leftVerticalAlignment" : "middle",
+          "leftView" : {
+            "alignment" : "left",
+            "background" : null,
+            "borderColor" : null,
+            "borderRadius" : null,
+            "borderWidth" : null,
+            "customWidth" : 160,
+            "dataSources" : [ {
+              "alarmFilterConfig" : {
+                "assigneeId" : null,
+                "searchPropagatedAlarms" : false,
+                "severityList" : null,
+                "statusList" : [ "ACTIVE" ],
+                "typeList" : null
+              },
+              "dataKeys" : [ null ],
+              "deviceId" : null,
+              "entityAliasId" : null,
+              "filterId" : null,
+              "latestDataKeys" : null,
+              "type" : "device"
+            } ],
+            "imageUrl" : "tb-image;/api/images/tenant/LOGO SUNKUU COLOR.png",
+            "margins" : null,
+            "paddings" : null,
+            "sourceType" : "image",
+            "subType" : null,
+            "type" : "IMAGE",
+            "widthType" : "custom"
+          },
+          "margins" : null,
+          "paddings" : {
+            "bottom" : 9,
+            "left" : 6,
+            "right" : 6,
+            "top" : 9
+          },
+          "rightVerticalAlignment" : "middle",
+          "rightView" : {
+            "background" : null,
+            "borderColor" : null,
+            "borderRadius" : null,
+            "borderWidth" : null,
+            "color" : "#000",
+            "dataSources" : [ ],
+            "font" : {
+              "family" : "Roboto",
+              "size" : 14.0,
+              "style" : "normal",
+              "weight" : "bold"
+            },
+            "height" : null,
+            "margins" : null,
+            "paddings" : null,
+            "subType" : null,
+            "textAlignment" : "right",
+            "type" : "HEADING",
+            "value" : "Informe Mensual de Consumo Energético - Medidor Tablero General",
+            "verticalAlignment" : "middle"
+          },
+          "splitGap" : 10,
+          "splitPosition" : 50.0,
+          "subType" : null,
+          "type" : "SPLIT_VIEW"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "LANDSCAPE",
+      "pageSize" : "A3",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : "Informe mensual de consumo energético - Medidor Tablero Principal",
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "258ddba0-47e6-11f1-a6d8-33f75efe8b97"
+    },
+    "name" : "Informe Mensual - Medidor Tablero Principal",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

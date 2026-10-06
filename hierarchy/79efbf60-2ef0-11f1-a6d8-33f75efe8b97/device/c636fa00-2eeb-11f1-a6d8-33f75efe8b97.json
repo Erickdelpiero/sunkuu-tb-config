@@ -1,0 +1,83 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "89ae3280-2714-11f1-a6d8-33f75efe8b97"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "c636fa00-2eeb-11f1-a6d8-33f75efe8b97"
+    },
+    "label" : "TG GOCTA",
+    "name" : "shellypro3em-ecc9ffe7f3ec",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"
+    },
+    "softwareId" : null,
+    "type" : "Shelly Pro 3EM"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "1d4d1880-2cc4-11f1-a6d8-33f75efe8b97"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "c636fa00-2eeb-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 62
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1790373090978,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1790370340066,
+      "longValue" : 1790370340066,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1791330483995,
+      "longValue" : 1791330483306,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

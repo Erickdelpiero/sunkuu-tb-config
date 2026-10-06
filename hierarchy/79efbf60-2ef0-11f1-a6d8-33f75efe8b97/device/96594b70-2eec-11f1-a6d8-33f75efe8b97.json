@@ -1,0 +1,115 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "fa155fd0-2714-11f1-a6d8-33f75efe8b97"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "96594b70-2eec-11f1-a6d8-33f75efe8b97"
+    },
+    "label" : "Shelly Temp Piscina",
+    "name" : "shellyplus1-b8d61a8c2fe4",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"
+    },
+    "softwareId" : null,
+    "type" : "Shelly Plus 1"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "38a2b4d0-2cc6-11f1-a6d8-33f75efe8b97"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "96594b70-2eec-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 68
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1791329952991,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1791328545398,
+      "longValue" : 1791328545398,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1791329952991,
+      "longValue" : 1791329952784,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.65,
+      "jsonValue" : null,
+      "key" : "tarifa_kwh",
+      "lastUpdateTs" : 1780599227155,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temp_max_alerta",
+      "lastUpdateTs" : 1780599227155,
+      "longValue" : 40,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temp_min_alerta",
+      "lastUpdateTs" : 1780599227155,
+      "longValue" : 30,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "temp_objetivo",
+      "lastUpdateTs" : 1780599227155,
+      "longValue" : 33,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

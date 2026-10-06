@@ -1,0 +1,83 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "15d28270-2715-11f1-a6d8-33f75efe8b97"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "b9dbf740-2ef2-11f1-a6d8-33f75efe8b97"
+    },
+    "label" : "Shelly H&T Piscina Temp",
+    "name" : "shellyhtg3-84fce63eed04",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"
+    },
+    "softwareId" : null,
+    "type" : "Shelly H&T G3"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "fb4cf460-2cc5-11f1-a6d8-33f75efe8b97"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b9dbf740-2ef2-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 85
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1791329085402,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1791329085400,
+      "longValue" : 1791329085400,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1791328446977,
+      "longValue" : 1791328445223,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

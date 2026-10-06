@@ -1,0 +1,88 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Conexión al broker Mosquitto interno (gonex-network). Escucha telemetría de todos los dispositivos Shelly Plus 1 con sondas de temperatura del tenant Sunkuu."
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "mosquitto",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "protocolVersion" : "MQTT_3_1_1",
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "+/status/temperature:0",
+        "qos" : 0
+      }, {
+        "filter" : "+/status/temperature:1",
+        "qos" : 0
+      }, {
+        "filter" : "+/status/switch:0",
+        "qos" : 0
+      }, {
+        "filter" : "+/status/temperature:101",
+        "qos" : 0
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1774937429052,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "ed204fa0-2cb0-11f1-a6d8-33f75efe8b97"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "38a2b4d0-2cc6-11f1-a6d8-33f75efe8b97"
+    },
+    "name" : "Sunkuu - Plus 1 Temp MQTT Integration",
+    "remote" : false,
+    "routingKey" : "bb02e7ee-05ce-e9d9-4fc3-c790dc82b7cf",
+    "secret" : "s242aekb3wrm7409b79h",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "38a2b4d0-2cc6-11f1-a6d8-33f75efe8b97"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "96594b70-2eec-11f1-a6d8-33f75efe8b97"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 68
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-pe-node",
+      "lastUpdateTs" : 1780580012406,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

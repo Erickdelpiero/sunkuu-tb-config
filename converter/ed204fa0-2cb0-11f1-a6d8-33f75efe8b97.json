@@ -1,0 +1,36 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Convierte payloads MQTT del Shelly Plus 1 con sondas DS18B20 (temperature:0 piscina, temperature:1 jacuzzi) a telemetría ThingsBoard."
+    },
+    "configuration" : {
+      "scriptLang" : "JS",
+      "decoder" : "var data = typeof payload === 'string' ? JSON.parse(payload) : JSON.parse(String.fromCharCode.apply(null, payload));\nvar deviceName = metadata.topic.split('/')[0];\n\nif (deviceName.indexOf('shellyplus1-') !== 0) {\n    return null;\n}\n\nvar result = {\n    deviceName: deviceName,\n    deviceType: 'Shelly Plus 1',\n    telemetry: {}\n};\n\nvar topic = metadata.topic;\n\nif (topic.indexOf('/status/switch:0') !== -1) {\n    result.telemetry = {\n        estado_salida:       data.output,\n        temperatura_interna: data.temperature ? data.temperature.tC : null\n    };\n} else if (topic.indexOf('/status/temperature:101') !== -1) {\n    result.telemetry = { temperatura_sonda: data.tC };\n} else if (topic.indexOf('/status/temperature:0') !== -1) {\n    result.telemetry = { temperatura_piscina: data.tC };\n} else if (topic.indexOf('/status/temperature:1') !== -1) {\n    result.telemetry = { temperatura_jacuzzi: data.tC };\n}\n\nreturn result;",
+      "tbelDecoder" : "// Decode an uplink message from a buffer\n// payload - array of bytes\n// metadata - key/value object\n\n/** Decoder **/\n\n// decode payload to string\nvar payloadStr = decodeToString(payload);\n\n// decode payload to JSON\n// var data = decodeToJson(payload);\n\nvar deviceName = 'Device A';\nvar deviceType = 'thermostat';\nvar customerName = 'Customer C';\nvar groupName = 'thermostat devices';\nvar manufacturer = 'Example corporation';\n// use assetName and assetType instead of deviceName and deviceType\n// to automatically create assets instead of devices.\n// var assetName = 'Asset A';\n// var assetType = 'building';\n\n// Result object with device/asset attributes/telemetry data\nvar result = {\n// Use deviceName and deviceType or assetName and assetType, but not both.\n   deviceName: deviceName,\n   deviceType: deviceType,\n// assetName: assetName,\n// assetType: assetType,\n// customerName: customerName,\n   groupName: groupName,\n   attributes: {\n       model: 'Model A',\n       serialNumber: 'SN111',\n       integrationName: metadata['integrationName'],\n       manufacturer: manufacturer\n   },\n   telemetry: {\n       temperature: 42,\n       humidity: 80,\n       rawData: payloadStr\n   }\n};\n\n/** Helper functions 'decodeToString' and 'decodeToJson' are already built-in **/\n\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer" ]
+    },
+    "converterVersion" : 1,
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "ed204fa0-2cb0-11f1-a6d8-33f75efe8b97"
+    },
+    "integrationType" : "MQTT",
+    "name" : "Shelly Plus 1 Temp - Uplink",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

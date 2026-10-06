@@ -1,0 +1,19 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : "Usuarios del cliente Gocta Andes Lodge — reciben informes de TG GOCTA, TG PUMARINRI y Piscina Temperada",
+      "usersFilter" : {
+        "type" : "CUSTOMER_USERS",
+        "customerId" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "6c645f60-48d4-11f1-a6d8-33f75efe8b97"
+    },
+    "name" : "Gocta Andes Lodge"
+  }
+}

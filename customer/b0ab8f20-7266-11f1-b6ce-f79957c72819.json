@@ -1,0 +1,35 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Esta es una cuenta de prueba para Gonex",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : "av. Perú",
+    "address2" : "2304",
+    "city" : "Lima",
+    "country" : "Peru",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : "erick@gonex.pe",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "b0ab8f20-7266-11f1-b6ce-f79957c72819"
+    },
+    "name" : "Gonex",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : "+51941915097",
+    "state" : "Lima",
+    "title" : "Gonex",
+    "zip" : "15101"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

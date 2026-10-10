@@ -31,7 +31,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class='card'>HTML code here</div>\n<!--CFG:{\"d\":\"cf7ddac0-2eeb-11f1-a6d8-33f75efe8b97\",\"t\":0.65,\"n\":\"TG PUMARINRI\"}-->",
+              "cardHtml" : "<div class='card'>HTML code here</div>\n<!--CFG:{\"d\":\"c636fa00-2eeb-11f1-a6d8-33f75efe8b97\",\"t\":0.65,\"n\":\"TG GOCTA\"}-->",
               "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
             },
             "title" : "HTML Card",
@@ -116,5 +116,6 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }

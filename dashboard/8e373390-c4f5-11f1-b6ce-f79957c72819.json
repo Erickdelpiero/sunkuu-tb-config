@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "TG GOCTA",
+    "title" : "TG PUMARINRI",
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
@@ -108,7 +108,7 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "TG GOCTA",
+    "name" : "TG PUMARINRI",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,

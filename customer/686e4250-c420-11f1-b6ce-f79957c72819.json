@@ -1,0 +1,35 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : "LAS PALMAS",
+    "address2" : null,
+    "city" : "TARAPOTO",
+    "country" : "Peru",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : "apusamay.hospedaje@gmail.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "686e4250-c420-11f1-b6ce-f79957c72819"
+    },
+    "name" : "APU SAMAY NATURE LODGE",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : "+51933896515",
+    "state" : "SAN MARTÍN",
+    "title" : "APU SAMAY NATURE LODGE",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,35 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : "SHAPAJA",
+    "country" : "Peru",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : "amazonlodgepumarinri@gmail.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a2202a70-c454-11f1-b6ce-f79957c72819"
+    },
+    "name" : "PUMARINRI AMAZON LODGE",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : "+51919489492",
+    "state" : "SAN MARTÍN",
+    "title" : "PUMARINRI AMAZON LODGE",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

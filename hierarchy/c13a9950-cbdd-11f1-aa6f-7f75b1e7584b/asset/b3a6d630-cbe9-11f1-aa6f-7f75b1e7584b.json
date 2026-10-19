@@ -27,7 +27,15 @@
   },
   "relations" : [ ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tipo",
+      "lastUpdateTs" : 1792434226937,
+      "longValue" : null,
+      "strValue" : "3em"
+    } ]
   },
   "calculatedFields" : [ ]
 }

@@ -11,7 +11,7 @@
         "borderWidth" : null,
         "config" : {
           "baseUrl" : "http://thingsboard.gonex.pe:8080",
-          "dashboardId" : "32131e90-5aaa-11f1-a6d8-33f75efe8b97",
+          "dashboardId" : "8e373390-c4f5-11f1-b6ce-f79957c72819",
           "namePattern" : null,
           "state" : "",
           "timewindow" : {
@@ -224,5 +224,10 @@
     "name" : "Informe Mensual - TG PUMARINRI",
     "ownerId" : null,
     "type" : "REPORT"
-  }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
 }

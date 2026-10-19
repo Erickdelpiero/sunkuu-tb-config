@@ -1,0 +1,19 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "PLATFORM_USERS",
+      "description" : "Usuarios del cliente Pumarinri Amazon Lodge — reciben informe de TG PUMARINRI",
+      "usersFilter" : {
+        "type" : "CUSTOMER_USERS",
+        "customerId" : "a2202a70-c454-11f1-b6ce-f79957c72819"
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "4685a730-cb5c-11f1-aa6f-7f75b1e7584b"
+    },
+    "name" : "Pumarinri Amazon Lodge"
+  }
+}

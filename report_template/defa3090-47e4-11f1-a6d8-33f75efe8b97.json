@@ -224,10 +224,5 @@
     "name" : "Informe Mensual - TG PUMARINRI",
     "ownerId" : null,
     "type" : "REPORT"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
-  },
-  "calculatedFields" : [ ]
+  }
 }

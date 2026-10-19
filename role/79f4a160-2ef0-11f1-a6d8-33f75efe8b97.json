@@ -9,7 +9,7 @@
     "name" : "Customer User",
     "permissions" : {
       "PROFILE" : [ "ALL" ],
-      "ALL" : [ "READ", "RPC_CALL", "READ_CREDENTIALS", "READ_ATTRIBUTES", "READ_TELEMETRY" ]
+      "ALL" : [ "READ", "READ_ATTRIBUTES", "READ_TELEMETRY" ]
     },
     "type" : "GENERIC",
     "additionalInfo" : {
@@ -24,5 +24,6 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }

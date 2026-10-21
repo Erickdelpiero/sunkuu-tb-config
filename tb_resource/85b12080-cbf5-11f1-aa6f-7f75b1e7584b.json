@@ -1,0 +1,27 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "LyogU3Vua3V1IDM2MCDCtyBCLTAxIMK3IHJlY3Vyc28gZGUgcHJ1ZWJhIChzZSByZWVtcGxhemEgZW4gQi0wMikgKi8KICAgdmFyIFNVTktVVV9CMDEgPSB7IG9rOiB0cnVlLCBwcnVlYmE6ICJCLTAxIiwgZmVjaGE6ICIyMDI2LTEwLTE5IiB9Ow==",
+    "descriptor" : {
+      "mediaType" : "application/javascript"
+    },
+    "etag" : "7a5a18d256315fbcfb9475490d73fbabdba060ef4f274f29ae655962c05fa200",
+    "externalId" : null,
+    "fileName" : "sunkuu-b01-prueba.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "85b12080-cbf5-11f1-aa6f-7f75b1e7584b"
+    },
+    "link" : "/api/resource/js_module/tenant/sunkuu-b01-prueba.js",
+    "name" : "sunkuu-b01-prueba",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "sunkuu-b01-prueba.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "sunkuu-b01-prueba"
+  }
+}

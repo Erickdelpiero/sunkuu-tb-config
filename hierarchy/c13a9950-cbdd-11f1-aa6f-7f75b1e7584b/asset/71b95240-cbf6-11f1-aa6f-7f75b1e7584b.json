@@ -25,7 +25,79 @@
   },
   "relations" : [ ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "activa",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboard_id",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : "00000000-0000-0000-0000-000000000003"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"cal\":\"00000000-0000-0000-0000-000000000004\",\"ilu\":\"00000000-0000-0000-0000-000000000005\",\"amb\":\"00000000-0000-0000-0000-000000000006\"}",
+      "key" : "dispositivos",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "es_prueba",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "etiqueta",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : "QA Instalación 2"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mostrar_parametros",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "orden",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : 800,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tipo",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : "piscina"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ubicacion",
+      "lastUpdateTs" : 1792439494430,
+      "longValue" : null,
+      "strValue" : "Lima, Lima"
+    } ]
   },
   "calculatedFields" : [ ]
 }

@@ -1,0 +1,33 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "a1683c90-cbdd-11f1-aa6f-7f75b1e7584b"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6121e190-cdae-11f1-aa6f-7f75b1e7584b"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "5e798cd0-cdcd-11f1-aa6f-7f75b1e7584b"
+    },
+    "label" : "QA2 Instalación 1",
+    "name" : "QA2-Instalación-1",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6121e190-cdae-11f1-aa6f-7f75b1e7584b"
+    },
+    "type" : "Instalación"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

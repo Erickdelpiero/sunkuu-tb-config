@@ -11,7 +11,8 @@
       "sizeX" : 7.5,
       "sizeY" : 3,
       "resources" : [ {
-        "url" : "/api/resource/js_module/tenant/sunkuu-registro.js"
+        "url" : "/api/resource/js_module/tenant/sunkuu-registro.js",
+        "isModule" : true
       }, {
         "url" : ""
       } ],

@@ -35,5 +35,5 @@
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   },
-  "groupEntities" : false
+  "groupEntities" : true
 }

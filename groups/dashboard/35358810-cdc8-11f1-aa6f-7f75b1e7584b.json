@@ -24,7 +24,7 @@
       "entityType" : "ENTITY_GROUP",
       "id" : "35358810-cdc8-11f1-aa6f-7f75b1e7584b"
     },
-    "name" : "G3",
+    "name" : "QA — GONEX QA 2 (prueba)",
     "ownerId" : {
       "entityType" : "TENANT",
       "id" : "fedba7d0-26cf-11f1-a6d8-33f75efe8b97"

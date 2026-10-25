@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "QA — Instalación 1 (3EM DEV)",
+    "title" : "QA — Instalación 3 (3EM DEV)",
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
@@ -108,7 +108,7 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "QA — Instalación 1 (3EM DEV)",
+    "name" : "QA — Instalación 3 (3EM DEV)",
     "resources" : null,
     "assignedCustomers" : null,
     "customerId" : null,

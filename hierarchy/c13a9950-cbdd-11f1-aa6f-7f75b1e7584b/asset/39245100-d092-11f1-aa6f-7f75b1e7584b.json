@@ -32,7 +32,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "activa",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -40,7 +40,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "dashboard_id",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : "cd3a2050-d091-11f1-aa6f-7f75b1e7584b"
     }, {
@@ -48,15 +48,15 @@
       "doubleValue" : null,
       "jsonValue" : "{\"principal\":\"99eae720-d091-11f1-aa6f-7f75b1e7584b\"}",
       "key" : "dispositivos",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "es_prueba",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -64,7 +64,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "etiqueta",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : "QA Instalación Tres"
     }, {
@@ -72,7 +72,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "mostrar_parametros",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -80,7 +80,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "orden",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : 750,
       "strValue" : null
     }, {
@@ -88,7 +88,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "tipo",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : "3em"
     }, {
@@ -96,7 +96,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ubicacion",
-      "lastUpdateTs" : 1792953605461,
+      "lastUpdateTs" : 1793055912233,
       "longValue" : null,
       "strValue" : "Lima, Lima"
     } ]

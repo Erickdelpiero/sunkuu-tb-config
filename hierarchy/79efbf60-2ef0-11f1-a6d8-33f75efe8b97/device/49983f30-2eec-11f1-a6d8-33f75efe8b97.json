@@ -12,6 +12,7 @@
     },
     "deviceData" : {
       "configuration" : {
+        "type" : "DEFAULT",
         "type" : "DEFAULT"
       },
       "transportConfiguration" : {
@@ -73,8 +74,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1793118543674,
-      "longValue" : 1793118541075,
+      "lastUpdateTs" : 1793121123414,
+      "longValue" : 1793121120964,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

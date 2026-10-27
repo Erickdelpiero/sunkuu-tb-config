@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "9648fe20-5ae6-11f1-a6d8-33f75efe8b97"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "Portal de Flota — Sunkuu 360",
+    "name" : "Portal de Flota — Sunkuu 360",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -108,16 +116,8 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "Portal de Flota — Sunkuu 360",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "9648fe20-5ae6-11f1-a6d8-33f75efe8b97"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "relations" : [ ],
   "attributes" : {

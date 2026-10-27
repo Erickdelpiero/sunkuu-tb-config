@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "75c7e760-3200-11f1-a6d8-33f75efe8b97"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "Centro de Exportación",
+    "name" : "Centro de Exportación",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -109,16 +117,8 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "Centro de Exportación",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "75c7e760-3200-11f1-a6d8-33f75efe8b97"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "relations" : [ ],
   "attributes" : {

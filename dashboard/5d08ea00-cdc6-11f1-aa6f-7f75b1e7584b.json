@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "5d08ea00-cdc6-11f1-aa6f-7f75b1e7584b"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "QA2 — Instalación 1 (3EM DEV)",
+    "name" : "QA2 — Instalación 1 (3EM DEV)",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -108,16 +116,8 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "QA2 — Instalación 1 (3EM DEV)",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "5d08ea00-cdc6-11f1-aa6f-7f75b1e7584b"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "relations" : [ ],
   "attributes" : {

@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "cc2cad90-5ad5-11f1-a6d8-33f75efe8b97"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "Piscina Temperada",
+    "name" : "Piscina Temperada",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -108,16 +116,8 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "Piscina Temperada",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "cc2cad90-5ad5-11f1-a6d8-33f75efe8b97"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "relations" : [ ],
   "attributes" : {

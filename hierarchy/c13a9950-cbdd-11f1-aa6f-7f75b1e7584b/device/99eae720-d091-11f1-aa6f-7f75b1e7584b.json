@@ -12,6 +12,7 @@
     },
     "deviceData" : {
       "configuration" : {
+        "type" : "DEFAULT",
         "type" : "DEFAULT"
       },
       "transportConfiguration" : {

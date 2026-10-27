@@ -12,6 +12,7 @@
     },
     "deviceData" : {
       "configuration" : {
+        "type" : "DEFAULT",
         "type" : "DEFAULT"
       },
       "transportConfiguration" : {
@@ -89,8 +90,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1793118456677,
-      "longValue" : 1793118456221,
+      "lastUpdateTs" : 1793121141419,
+      "longValue" : 1793121141192,
       "strValue" : null
     }, {
       "booleanValue" : null,

@@ -3,6 +3,11 @@
   "entity" : {
     "configuration" : {
       "format" : "PDF",
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss",
+      "format" : "PDF",
+      "entityAliases" : [ ],
+      "filters" : [ ],
       "components" : [ {
         "alignment" : "center",
         "background" : null,
@@ -39,8 +44,6 @@
         "type" : "DASHBOARD",
         "widthType" : "fitWidth"
       } ],
-      "entityAliases" : [ ],
-      "filters" : [ ],
       "footer" : {
         "components" : [ {
           "background" : null,
@@ -110,7 +113,6 @@
           "firstPage" : null
         }
       },
-      "format" : "PDF",
       "header" : {
         "components" : [ {
           "background" : null,
@@ -190,7 +192,6 @@
           "firstPage" : null
         }
       },
-      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
       "pageBackground" : "#fff",
       "pageMargins" : {
         "bottom" : 20,
@@ -199,8 +200,7 @@
         "top" : 20
       },
       "pageOrientation" : "LANDSCAPE",
-      "pageSize" : "A3",
-      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+      "pageSize" : "A3"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",

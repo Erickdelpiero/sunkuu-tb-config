@@ -42,6 +42,7 @@
     "SERVER_SCOPE" : [ ]
   },
   "calculatedFields" : [ {
+    "additionalInfo" : null,
     "configuration" : {
       "type" : "ALARM",
       "arguments" : {
@@ -126,6 +127,7 @@
     },
     "type" : "ALARM"
   }, {
+    "additionalInfo" : null,
     "configuration" : {
       "type" : "ALARM",
       "arguments" : {
@@ -276,6 +278,7 @@
     },
     "type" : "ALARM"
   }, {
+    "additionalInfo" : null,
     "configuration" : {
       "type" : "ALARM",
       "arguments" : {

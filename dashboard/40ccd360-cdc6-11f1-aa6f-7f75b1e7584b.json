@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "40ccd360-cdc6-11f1-aa6f-7f75b1e7584b"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "QA — Portal de Flota (DEV)",
+    "name" : "QA — Portal de Flota (DEV)",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -108,16 +116,8 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "QA — Portal de Flota (DEV)",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "40ccd360-cdc6-11f1-aa6f-7f75b1e7584b"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "relations" : [ ],
   "attributes" : {

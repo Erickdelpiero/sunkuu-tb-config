@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "8e373390-c4f5-11f1-b6ce-f79957c72819"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "TG PUMARINRI",
+    "name" : "TG PUMARINRI",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -108,16 +116,8 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "TG PUMARINRI",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "8e373390-c4f5-11f1-b6ce-f79957c72819"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "relations" : [ ],
   "attributes" : {

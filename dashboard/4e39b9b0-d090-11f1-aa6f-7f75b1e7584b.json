@@ -1,8 +1,16 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "4e39b9b0-d090-11f1-aa6f-7f75b1e7584b"
+    },
+    "customerId" : null,
+    "ownerId" : null,
     "title" : "Administración — Sunkuu 360",
+    "name" : "Administración — Sunkuu 360",
     "image" : null,
+    "assignedCustomers" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
     "configuration" : {
@@ -108,16 +116,8 @@
         "showUpdateDashboardImage" : false
       }
     },
-    "name" : "Administración — Sunkuu 360",
     "resources" : null,
-    "assignedCustomers" : null,
-    "customerId" : null,
-    "externalId" : null,
-    "id" : {
-      "entityType" : "DASHBOARD",
-      "id" : "4e39b9b0-d090-11f1-aa6f-7f75b1e7584b"
-    },
-    "ownerId" : null
+    "externalId" : null
   },
   "relations" : [ ],
   "attributes" : {

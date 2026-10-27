@@ -15,8 +15,8 @@
       "entityType" : "ASSET",
       "id" : "c13917f0-d25a-11f1-bea9-c92ef82b7fa0"
     },
-    "label" : "TG GOCTA",
-    "name" : "INST · TG GOCTA",
+    "label" : "TG Gocta",
+    "name" : "INST · TG Gocta",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "79efbf60-2ef0-11f1-a6d8-33f75efe8b97"

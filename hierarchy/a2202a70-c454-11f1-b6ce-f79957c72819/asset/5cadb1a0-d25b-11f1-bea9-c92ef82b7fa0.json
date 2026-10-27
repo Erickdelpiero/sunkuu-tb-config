@@ -25,7 +25,79 @@
   },
   "relations" : [ ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "activa",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboard_id",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : "8e373390-c4f5-11f1-b6ce-f79957c72819"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"principal\":\"717ae5e0-c4f4-11f1-b6ce-f79957c72819\"}",
+      "key" : "dispositivos",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "es_prueba",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "etiqueta",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : "TG PUMARINRI"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mostrar_parametros",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "orden",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : 40,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tipo",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : "3em"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ubicacion",
+      "lastUpdateTs" : 1793142526606,
+      "longValue" : null,
+      "strValue" : "Shapaja, San Martín"
+    } ]
   },
   "calculatedFields" : [ ]
 }

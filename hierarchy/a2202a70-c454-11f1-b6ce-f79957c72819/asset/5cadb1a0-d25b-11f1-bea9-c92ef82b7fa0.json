@@ -1,0 +1,31 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "a1683c90-cbdd-11f1-aa6f-7f75b1e7584b"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a2202a70-c454-11f1-b6ce-f79957c72819"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "5cadb1a0-d25b-11f1-bea9-c92ef82b7fa0"
+    },
+    "label" : "TG PUMARINRI",
+    "name" : "INST · TG PUMARINRI",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "a2202a70-c454-11f1-b6ce-f79957c72819"
+    },
+    "type" : "Instalación"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -48,7 +48,7 @@
       "doubleValue" : null,
       "jsonValue" : "{\"principal\":\"00000000-0000-0000-0000-000000000002\"}",
       "key" : "dispositivos",
-      "lastUpdateTs" : 1792993410887,
+      "lastUpdateTs" : 1793056511297,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -56,7 +56,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "es_prueba",
-      "lastUpdateTs" : 1792437917002,
+      "lastUpdateTs" : 1793056511297,
       "longValue" : null,
       "strValue" : null
     }, {

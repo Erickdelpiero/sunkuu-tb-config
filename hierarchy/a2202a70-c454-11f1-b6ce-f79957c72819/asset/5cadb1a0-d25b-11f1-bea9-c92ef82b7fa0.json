@@ -15,8 +15,8 @@
       "entityType" : "ASSET",
       "id" : "5cadb1a0-d25b-11f1-bea9-c92ef82b7fa0"
     },
-    "label" : "TG PUMARINRI",
-    "name" : "INST · TG PUMARINRI",
+    "label" : "TG Pumarinri",
+    "name" : "INST · TG Pumarinri",
     "ownerId" : {
       "entityType" : "CUSTOMER",
       "id" : "a2202a70-c454-11f1-b6ce-f79957c72819"

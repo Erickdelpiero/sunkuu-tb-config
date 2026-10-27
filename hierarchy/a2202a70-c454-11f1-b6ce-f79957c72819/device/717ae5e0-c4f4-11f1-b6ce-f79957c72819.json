@@ -61,8 +61,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1793141229411,
-      "longValue" : 1793141227320,
+      "lastUpdateTs" : 1793141712414,
+      "longValue" : 1793141712239,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.65,
+      "jsonValue" : null,
+      "key" : "tarifa_kwh",
+      "lastUpdateTs" : 1793141682180,
+      "longValue" : null,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

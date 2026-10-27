@@ -1,0 +1,80 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "686e4250-c420-11f1-b6ce-f79957c72819"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT",
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "b75859d0-2ca6-11f1-a6d8-33f75efe8b97"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "dbc9c1f0-d22d-11f1-bea9-c92ef82b7fa0"
+    },
+    "label" : null,
+    "name" : "shellyproem50-441d6474e3f8",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "686e4250-c420-11f1-b6ce-f79957c72819"
+    },
+    "softwareId" : null,
+    "type" : "Shelly Pro EM50"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "e3980900-2cc4-11f1-a6d8-33f75efe8b97"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "dbc9c1f0-d22d-11f1-bea9-c92ef82b7fa0"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON",
+    "version" : 287
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1793122983413,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1793129415417,
+      "longValue" : 1793129414847,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.65,
+      "jsonValue" : null,
+      "key" : "tarifa_kwh",
+      "lastUpdateTs" : 1793129211902,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

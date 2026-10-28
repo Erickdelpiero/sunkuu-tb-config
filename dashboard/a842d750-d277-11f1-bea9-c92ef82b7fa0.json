@@ -70,7 +70,13 @@
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : true,
+                "mobileRowHeight" : 70
               }
             }
           }
@@ -96,7 +102,13 @@
         "showEntitiesSelect" : true,
         "showDashboardTimewindow" : true,
         "showDashboardExport" : true,
-        "toolbarAlwaysOpen" : true
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "showConfigureWithAi" : true
       }
     },
     "resources" : null,
@@ -105,5 +117,6 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }

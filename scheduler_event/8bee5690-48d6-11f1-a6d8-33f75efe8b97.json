@@ -30,7 +30,7 @@
     "ownerId" : null,
     "schedule" : {
       "timezone" : "America/Lima",
-      "startTime" : 1780318800000,
+      "startTime" : 1780333200000,
       "repeat" : {
         "type" : "MONTHLY",
         "endsOn" : 4115941200000

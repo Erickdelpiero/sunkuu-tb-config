@@ -1,0 +1,31 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "a1683c90-cbdd-11f1-aa6f-7f75b1e7584b"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "c13a9950-cbdd-11f1-aa6f-7f75b1e7584b"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "83a58830-d27b-11f1-bea9-c92ef82b7fa0"
+    },
+    "label" : "QA Pro EM (DEV)",
+    "name" : "INST · QA Pro EM (DEV)",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "c13a9950-cbdd-11f1-aa6f-7f75b1e7584b"
+    },
+    "type" : "Instalación"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

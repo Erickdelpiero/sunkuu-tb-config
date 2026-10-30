@@ -1,0 +1,31 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "a1683c90-cbdd-11f1-aa6f-7f75b1e7584b"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "686e4250-c420-11f1-b6ce-f79957c72819"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "82cd8940-d4a0-11f1-bea9-c92ef82b7fa0"
+    },
+    "label" : "Hab. 105",
+    "name" : "INST · Hab. 105",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "686e4250-c420-11f1-b6ce-f79957c72819"
+    },
+    "type" : "Instalación"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

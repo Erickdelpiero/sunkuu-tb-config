@@ -14,9 +14,10 @@
     "scada" : true,
     "title" : "Sunkuu"
   },
-  "fqns" : [ "centro_de_exportaci_n_sunkuu", "sunkuu_portal_de_flota", "sunkuu_template_3em", "sunkuu_template_piscina" ],
+  "fqns" : [ "centro_de_exportaci_n_sunkuu", "sunkuu_portal_de_flota", "sunkuu_template_3em", "sunkuu_template_piscina", "sunkuu_template_pro_em" ],
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }

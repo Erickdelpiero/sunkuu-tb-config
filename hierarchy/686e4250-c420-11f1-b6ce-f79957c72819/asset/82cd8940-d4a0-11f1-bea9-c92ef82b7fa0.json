@@ -25,7 +25,95 @@
   },
   "relations" : [ ],
   "attributes" : {
-    "SERVER_SCOPE" : [ ]
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "activa",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "canal_0_nombre",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : "Hab. 105"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "canal_1_nombre",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : ""
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboard_id",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : "ce4e42c0-d49f-11f1-bea9-c92ef82b7fa0"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"principal\":\"dbc9c1f0-d22d-11f1-bea9-c92ef82b7fa0\"}",
+      "key" : "dispositivos",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "es_prueba",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "etiqueta",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : "Hab. 105"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "mostrar_parametros",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "orden",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : 50,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tipo",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : "proem"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ubicacion",
+      "lastUpdateTs" : 1793392500885,
+      "longValue" : null,
+      "strValue" : "Tarapoto, San Martín"
+    } ]
   },
   "calculatedFields" : [ ]
 }

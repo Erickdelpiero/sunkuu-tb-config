@@ -26,11 +26,11 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "activa",
-      "lastUpdateTs" : 1793156345099,
+      "lastUpdateTs" : 1793391491929,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -60,9 +60,9 @@
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
-      "jsonValue" : "{\"principal\":\"dbc9c1f0-d22d-11f1-bea9-c92ef82b7fa0\"}",
+      "jsonValue" : "{\"principal\":\"00000000-0000-0000-0000-000000000105\"}",
       "key" : "dispositivos",
-      "lastUpdateTs" : 1793156345099,
+      "lastUpdateTs" : 1793391491929,
       "longValue" : null,
       "strValue" : null
     }, {
